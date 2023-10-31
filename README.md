@@ -4,8 +4,6 @@ Simple gallery with arts :)
 
 ## Technologies:
 
-```
-React
-Typescript
-Firebase
-```
+- React
+- Typescript
+- Firebase
