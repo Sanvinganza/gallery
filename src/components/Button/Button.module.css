@@ -1,0 +1,31 @@
+.button {
+  display: inline-block;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  padding: 10px;
+
+  cursor: pointer;
+  border: 1px solid var(--orange-dark);
+  border-radius: 25px;
+
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  width: 280px;
+  height: 52px;
+
+  transition: all 0.25s;
+}
+
+.primary {
+  color: var(--gray-1);
+  background-color: var(--orange);
+}
+
+.ghost {
+  color: var(--orange);
+  background: var(--gray-1);
+}
