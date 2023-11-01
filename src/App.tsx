@@ -3,7 +3,7 @@ import { Button } from "./components/Button/Button";
 function App() {
   return (
     <>
-      <Button apperance="ghost">okey</Button>
+      <Button apperance="primary">to pictures</Button>
     </>
   );
 }

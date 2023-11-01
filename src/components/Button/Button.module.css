@@ -1,6 +1,5 @@
 .button {
   display: inline-block;
-  text-transform: uppercase;
   box-sizing: border-box;
   padding: 10px;
 
@@ -8,11 +7,11 @@
   border: 1px solid var(--orange-dark);
   border-radius: 25px;
 
-  font-family: Mulish;
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
   letter-spacing: 0em;
+
   text-align: center;
   width: 280px;
   height: 52px;
@@ -21,11 +20,13 @@
 }
 
 .primary {
-  color: var(--gray-1);
+  color: var(--black);
   background-color: var(--orange);
+  padding: 5px 30px;
 }
 
 .ghost {
+  padding: 5px 10px;
   color: var(--orange);
   background: var(--gray-1);
 }

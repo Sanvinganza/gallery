@@ -1,11 +1,4 @@
-* {
-  font-family: CAT Linz;
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 36px;
-  letter-spacing: 0.12em;
-  text-align: left;
-}
+@import url("https://fonts.googleapis.com/css2?family=Mulish&family=Noto+Sans+KR:wght@400;500;600;700&display=swap");
 
 :root {
   --gray-1: #e5e0dd;
@@ -16,4 +9,29 @@
   --black: #161616;
   --orange: #ff9110;
   --orange-dark: #ff91101a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Mulish", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
+
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+#root {
+  max-width: 1440px;
+  background-color: var(--black);
+  height: 100%;
+}
+
+header {
+  height: 91px;
 }
