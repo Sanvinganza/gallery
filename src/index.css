@@ -26,9 +26,16 @@
   text-align: left;
 }
 
-#root {
-  max-width: 1440px;
+html {
   background-color: var(--black);
+}
+
+#root {
+  display: flex;
+  flex-direction: row;
+
+  max-width: 1440px;
+  color: var(--light);
   height: 100%;
 }
 
