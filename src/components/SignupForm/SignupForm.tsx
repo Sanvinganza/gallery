@@ -3,6 +3,7 @@ import * as Yup from "yup";
 import { HTag } from "../HTag/HTag";
 import styles from "./SignUpForm.module.css";
 import { useRef } from "react";
+import { Button } from "../Button/Button";
 
 const SignUpSchema = Yup.object().shape({
   name: Yup.string().required("Required"),
@@ -17,11 +18,13 @@ const handleSubmit = (values: { name: string; password: string }) => {
   }, 500);
 };
 
-const SignUp = () => {
+export const SignUpForm = () => {
   const formRef = useRef<any>();
 
   return (
-    <div>
+    <div className={styles.container}>
+      <HTag tag="h1">log in</HTag>
+
       <Formik
         innerRef={formRef}
         initialValues={{
@@ -60,18 +63,12 @@ const SignUp = () => {
               name="password"
               render={(msg) => <div className={styles.field_error}>{msg}</div>}
             />
+            <Button apperance="primary" type="submit" className={styles.button}>
+              Continue
+            </Button>
           </Form>
         )}
       />
     </div>
   );
 };
-
-export function SignupForm() {
-  return (
-    <>
-      <HTag tag="h1">Lorem</HTag>
-      <SignUp />
-    </>
-  );
-}

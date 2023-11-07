@@ -1,16 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
 .form {
   display: flex;
   flex-direction: column;
-  width: 340px;
+  width: 600px;
 }
 
 .signup_input {
-  margin: 5px;
+  margin: 10px 0;
   border: 1px solid #3d3d3d;
   border-radius: 90px;
   padding: 5px 15px;
   font-size: 16px;
-  background-color: var(--grey-5);
+  background-color: var(--gray-5);
   color: #7f7f7f;
   text-transform: none;
   &:focus {
@@ -26,6 +31,19 @@
   color: #f14b53;
   font-weight: 300;
   line-height: 16.32px;
-  text-align: center;
+  padding-left: 15px;
   text-transform: none;
+}
+
+.button {
+  font-family: "Mulish";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 10px, 50px, 10px, 50px;
+  margin-top: 30px;
+  border-radius: 75px;
+  color: var(--gray-5);
 }

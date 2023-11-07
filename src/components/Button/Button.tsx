@@ -14,14 +14,19 @@ export interface IButtonProps
 export function Button({
   apperance,
   children,
+  className,
   ...props
 }: IButtonProps): JSX.Element {
   return (
     <button
-      className={cn(styles.button, {
-        [styles.primary]: apperance === "primary",
-        [styles.ghost]: apperance === "ghost",
-      })}
+      className={cn(
+        styles.button,
+        {
+          [styles.primary]: apperance === "primary",
+          [styles.ghost]: apperance === "ghost",
+        },
+        className
+      )}
       {...props}
     >
       {children}
