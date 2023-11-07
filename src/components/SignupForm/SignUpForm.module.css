@@ -1,6 +1,8 @@
 .container {
   display: flex;
   flex-direction: column;
+
+  margin-left: calc(50vw - 300px);
 }
 
 .form {
@@ -46,4 +48,9 @@
   margin-top: 30px;
   border-radius: 75px;
   color: var(--gray-5);
+}
+
+.h1 {
+  font-family: "CAT Linz";
+  font-weight: 100;
 }

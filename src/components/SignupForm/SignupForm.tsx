@@ -23,7 +23,9 @@ export const SignUpForm = () => {
 
   return (
     <div className={styles.container}>
-      <HTag tag="h1">log in</HTag>
+      <HTag tag="h1" className={styles.h1}>
+        log in
+      </HTag>
 
       <Formik
         innerRef={formRef}
