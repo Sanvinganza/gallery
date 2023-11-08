@@ -27,6 +27,9 @@ export function GalleryPage() {
           </div>
         </div>
       </div>
+      <div className="gallery">
+        <div className="title">all images</div>
+      </div>
     </div>
   );
 }
