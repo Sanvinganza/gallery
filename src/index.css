@@ -33,8 +33,9 @@ html {
 #root {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 
-  max-width: 1440px;
+  width: 100%;
   color: var(--light);
   height: 100%;
 }
