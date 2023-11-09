@@ -1,10 +1,7 @@
-import * as React from "react";
 import styles from "./GalleryLayout.module.css";
 import { Outlet } from "react-router-dom";
 
-export interface IGalleryLayoutProps {}
-
-export function GalleryLayout(props: IGalleryLayoutProps) {
+export function GalleryLayout() {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
