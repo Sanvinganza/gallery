@@ -43,3 +43,7 @@ html {
 header {
   height: 91px;
 }
+
+a {
+  text-decoration: none;
+}

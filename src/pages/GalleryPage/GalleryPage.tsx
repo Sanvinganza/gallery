@@ -3,14 +3,7 @@ import styles from "./GalleryPage.module.css";
 
 export function GalleryPage() {
   return (
-    <div className={styles.container}>
-      <div className={styles.header}>
-        <div className={styles.logo}>lorem</div>
-        <div className={styles.info}>
-          <div className={styles.username}>username</div>
-          <div className={styles.logout}>logout</div>
-        </div>
-      </div>
+    <>
       <div className={styles.main}>
         <div className={styles.info}>
           <div className={styles.title}>Lorem ipsum dolor sit amet</div>
@@ -40,6 +33,6 @@ export function GalleryPage() {
           />
         ))}
       </div>
-    </div>
+    </>
   );
 }
