@@ -4,6 +4,7 @@ import { HTag } from "../HTag/HTag";
 import styles from "./SignUpForm.module.css";
 import { useRef } from "react";
 import { Button } from "../Button/Button";
+import { redirect } from "react-router-dom";
 
 const SignUpSchema = Yup.object().shape({
   name: Yup.string().required("Required"),
@@ -12,10 +13,14 @@ const SignUpSchema = Yup.object().shape({
     .required("Required"),
 });
 
-const handleSubmit = (values: { name: string; password: string }) => {
-  setTimeout(() => {
-    alert(JSON.stringify(values, null, 2));
-  }, 500);
+const handleSubmit = ({
+  name,
+  password,
+}: {
+  name: string;
+  password: string;
+}) => {
+  redirect("/gallery");
 };
 
 export const SignUpForm = () => {
@@ -40,6 +45,8 @@ export const SignUpForm = () => {
             className={styles.form}
             onKeyDown={(e) => {
               if (e.key === "Enter") {
+                redirect("gallery");
+
                 console.log(formRef.current?.values);
               }
             }}

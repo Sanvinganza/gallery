@@ -55,7 +55,7 @@ export function GalleryLayout() {
       <div className={styles.created}>
         <div className={styles.text}>2023-2024 All right reserved</div>
         <div className={styles.text}>
-          Site is deceloped by <a href="https://github.com/Sanvinganza">ME</a>
+          Site is developed by <a href="https://github.com/Sanvinganza">ME</a>
         </div>
       </div>
     </div>
