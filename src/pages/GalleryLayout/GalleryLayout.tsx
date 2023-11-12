@@ -12,7 +12,9 @@ export function GalleryLayout() {
         </div>
       </div>
 
-      <Outlet />
+      <div style={{ flex: 1 }}>
+        <Outlet />
+      </div>
 
       <div className={styles.footer_container}>
         <div className={styles.payment}>
