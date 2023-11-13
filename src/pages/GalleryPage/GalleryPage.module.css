@@ -77,3 +77,34 @@
   background-position: center;
   border-radius: 15px;
 }
+
+@media only screen and (max-width: 576px) {
+  .main {
+    height: 240px;
+    height: auto;
+    margin: 0 15px;
+    flex-direction: column-reverse;
+
+    > .info {
+      > .title {
+        font-size: 42px;
+      }
+    }
+  }
+  .discribe {
+    font-size: 14px;
+  }
+  .logo_container {
+    > .logo_img1 {
+      width: 338px;
+      height: 254px;
+    }
+    > .logo_img2 {
+      width: 133px;
+      rotate: -3deg;
+      left: 22px;
+      top: -75px;
+      height: 77px;
+    }
+  }
+}

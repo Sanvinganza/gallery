@@ -40,3 +40,9 @@
   color: var(--orange);
   background: var(--orange-dark);
 }
+
+@media only screen and (max-width: 576px) {
+  .button {
+    width: calc(100% - 32px);
+  }
+}
