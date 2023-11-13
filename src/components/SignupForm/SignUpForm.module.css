@@ -54,3 +54,18 @@
   font-family: "CAT Linz";
   font-weight: 100;
 }
+
+/* ----- MOBILE ----- */
+
+@media only screen and (max-width: 576px) {
+  .container {
+    margin-left: 0;
+  }
+  .form {
+    align-items: center;
+    width: fit-content;
+  }
+  .signup_input {
+    width: 320px;
+  }
+}

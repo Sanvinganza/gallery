@@ -8,3 +8,11 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
+/* ----- MOBILE ----- */
+
+@media only screen and (max-width: 576px) {
+  .container {
+    background-image: none;
+  }
+}
